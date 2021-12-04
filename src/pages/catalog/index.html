@@ -1,28 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
-      </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap">
+	<link rel="stylesheet" href="/common.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<title>Каталог</title>
+</head>
+
+<body>
+	<div class="container">
+		@@include('header/index.html')
+		<main>
+			<section class="products">
+				<div class="breadcrumbs">
+					<h1>Category Products</h1>
+					<div class="breadcrumbs__links">
+						<div class="breadcrumbs__link">
+							<a href="index.html">Home</a>
+						</div>
+						<span>Catalog</span>
+					</div>
+				</div>
+				<ul class="products__catalog undotted">
+					<li class="products__item products__item_1">
+						<a href="#">
+							<h3>Apparel <br> kids</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_2">
+						<a href="#">
+							<h3>Holiday <br> shop</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_3">
+						<a href="/pages/toys/index.html">
+							<h3>Toys</h3>
+						</a>
+					</li>
+				</ul>
+				<div class="products__lower">
+					<div class="products__box">
+						<ul class="products__catalog undotted">
+							<li class="products__item products__item_4">
+								<a href="#">
+									<h3>Accessories</h3>
+								</a>
+							</li>
+							<li class="products__item products__item_5">
+								<a href="#">
+									<h3>Sale</h3>
+								</a>
+							</li>
+							<li class="products__item products__item_6">
+								<a href="#">
+									<h3>Apparel adults</h3>
+								</a>
+							</li>
+						</ul>
+						<h2>Product Description</h2>
+						<p>
+							Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really
+							cry.
+							You
+							can
+							even bathe her, just like a little sister.
+						</p>
+						<p>
+							A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a
+							doll
+							will
+							be
+							an excellent choice for a gift for a girl from 4 years old.
+						</p>
+						<p>
+							The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+							hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her
+							young
+							mistress.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	@@include('footer/index.html')
+</body>
+
 </html>

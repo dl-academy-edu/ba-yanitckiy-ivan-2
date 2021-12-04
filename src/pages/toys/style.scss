@@ -1,3 +1,103 @@
-main.toys-main {
- padding: 30px 0;
+.settings__background{
+	background: rgba(125, 151, 218, 0.2);
+}
+
+.settings__options{
+	margin: 0 0 60px 0;
+	display: flex;
+	align-items: flex-start;
+	padding: 42px 0px;
+}
+
+.settings__options h3{
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 15px 0;
+}
+
+.settings__options span,
+.settings__options label{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.settings__cost{
+	margin: 0 94px 0 0;
+}
+
+.settings__cost input{
+	margin: 0 0 6px 0;
+}
+
+.settings__number{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.settings__color{
+	margin: 0 124px 0 0;
+}
+
+.settings__color li{
+	margin: 0 0 15px 0;
+}
+
+.settings__color li:last-child{
+	margin: 0;
+}
+
+.settings__delivery{
+	margin: 0 69px 0 0;
+}
+
+.settings__delivery li{
+	margin: 0 0 10px 0;
+}
+
+.settings__delivery li:last-child{
+	margin: 0
+}
+
+.settings__amount{
+	margin: 0 60px 0 0;
+}
+
+.settings__amount ul{
+	display: flex;
+}
+
+.settings__line{
+	display: flex;
+	align-items: flex-start;
+}
+
+.buttons{
+	margin: 0 60px 0 0;
+}
+
+.buttons__item{
+	padding: 7px 0 0 0;
+}
+
+.buttons__item label{
+	padding: 7px 28px;
+	background: #FFFFFF;
+}
+
+.buttons__item label:hover{
+	background: #EDDEEB;
+	color: #877379;;
+}
+
+.radio-input_button:checked + .radio-label_button{
+	background: #F3D0DB;
+}
+
+.toys__list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 0 30px 0;
 }

@@ -1,0 +1,24 @@
+.contact__content{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 60px 0;
+}
+
+.contact__description{
+	max-width: 380px;
+}
+
+.contact__description p{
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 20px 0;
+}
+
+.contact__description p.gold{
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color: #C29974;
+}

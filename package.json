@@ -1,9 +1,9 @@
 {
-	"name": "gulp-elementary",
+	"name": "gulp-study",
 	"version": "1.0.0",
-	"description": "Simple gulp application",
+	"description": "Educational gulp application",
 	"main": "gulpfile.js",
-	"author": "ducker-dev <the.ivan.smirnov@gmail.com>",
+	"author": "Ivan Yanitskiy <yanickiy.ivan@yandex.com>",
 	"license": "MIT",
 	"dependencies": {
 		"browser-sync": "^2.26.5",

@@ -29,6 +29,7 @@
 	padding: 0 0 0 3px;
 	background: #D6CAC2;
 	margin: 0 0 11px 0;
+	transition: background 0.4s;
 }
 
 .slider__pos_active{
@@ -315,6 +316,7 @@
 	top: 0;
 	right: -25px;
 	background: none;
+	transition: opacity 0.4s;
 }
 
 .form__close:hover{

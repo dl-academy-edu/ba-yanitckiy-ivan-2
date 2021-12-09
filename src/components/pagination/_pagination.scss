@@ -10,33 +10,32 @@
 }
 
 .pagination__back{
-	background-image: url(static/images/back.svg);
 	margin: 0 auto 0 0;
 	width: 18px;
 	height: 32px;
 }
 
 .pagination__forward{
-	background-image: url(static/images/forward.svg);
 	margin: 0 0 0 auto;
 	width: 18px;
 	height: 32px;
 }
 
-.pagination__back:hover{
-	background-image: url(static/images/back_h.svg);
+.pagination__back path,
+.pagination__forward path{
+	transition: all 0.4s;
 }
 
-.pagination__forward:hover{
-	background-image: url(static/images/forward_h.svg);
+.pagination__back:hover path,
+.pagination__forward:hover path{
+	stroke: #C29974;
+	stroke-opacity: 1;
 }
 
-.pagination__back:active{
-	background-image: url(static/images/back_a.svg);
-}
-
-.pagination__forward:active{
-	background-image: url(static/images/forward_a.svg);
+.pagination__back:active path,
+.pagination__forward:active path{
+	stroke: #C29974;
+	stroke-opacity: 0.7;
 }
 
 .pagination__num{
@@ -49,6 +48,7 @@
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
+	transition: color 0.4s;
 }
 
 .pagination__num_active a{

@@ -33,6 +33,7 @@
 	transform: translate(-50%,-50%);
 	background: #E5EAF8;
 	opacity: 0;
+	transition: opacity 0.4s;
 }
 
 .toys__img div:hover{

@@ -8,6 +8,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: opacity 0.4s;
 }
 
 .header__nav{
@@ -27,6 +28,7 @@
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 19px;
+	transition: opacity 0.4s;
 }
 
 .header__search{
@@ -36,6 +38,7 @@
 	justify-content: center;
 	align-items: center;
 	background: none;
+	transition: opacity 0.4s;
 }
 
 .header__contact{
@@ -46,18 +49,19 @@
   text-transform: uppercase;
 	background: none;
 	word-spacing: 3px;
+	transition: opacity 0.4s;
 }
 
-a.header__logo:hover,
+.header__logo:hover,
 .header__item a:hover,
 .header__search:hover,
-a.header__contact:hover{
+.header__contact:hover{
 	opacity: 0.5;
 }
 
-a.header__logo:active,
+.header__logo:active,
 .header__item a:active,
 .header__search:active,
-a.header__contact:active{
+.header__contact:active{
 	opacity: 0.2;
 }

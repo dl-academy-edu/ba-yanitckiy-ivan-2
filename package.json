@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Educational gulp application",
 	"main": "gulpfile.js",
-	"author": "Ivan Yanitskiy <yanickiy.ivan@yandex.com>",
+	"author": "Ivan Yanitskiy <yanickiy.ivan@yandex.ru>",
 	"license": "MIT",
 	"dependencies": {
 		"browser-sync": "^2.26.5",

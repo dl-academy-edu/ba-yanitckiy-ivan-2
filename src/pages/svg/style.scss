@@ -1,0 +1,36 @@
+.a{
+	width: 100%;
+	height: 700px;
+	background: red;
+	// z-index: 2;
+	// position: relative;
+}
+
+// .b{
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 200px;
+// 	height: 200px;
+// 	background: gold;
+// 	z-index: 1;
+// }
+
+.c{
+	width: 200px;
+	height: 200px;
+	background: greenyellow;
+	z-index: 2;
+	position: relative;
+}
+
+.c::after{
+	content: "";
+	width: 100px;
+	height: 100px;
+	background: blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}

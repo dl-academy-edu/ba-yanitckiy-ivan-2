@@ -29,40 +29,40 @@
 					</div>
 				</div>
 				<ul class="products__catalog undotted">
-					<li class="products__item products__item_1">
-						<a href="#">
-							<h3>Apparel <br> kids</h3>
-						</a>
-					</li>
-					<li class="products__item products__item_2">
-						<a href="#">
-							<h3>Holiday <br> shop</h3>
-						</a>
-					</li>
-					<li class="products__item products__item_3">
-						<a href="/pages/toys/index.html">
-							<h3>Toys</h3>
-						</a>
-					</li>
+					@@include('categorie/index.html',{
+					"index":"1",
+					"href":"#",
+					"name":"Apparel kids"
+					})
+					@@include('categorie/index.html',{
+					"index":"2",
+					"href":"#",
+					"name":"Holiday shop"
+					})
+					@@include('categorie/index.html',{
+					"index":"3",
+					"href":"/pages/toys/index.html",
+					"name":"Toys"
+					})
 				</ul>
 				<div class="products__lower">
 					<div class="products__box">
 						<ul class="products__catalog undotted">
-							<li class="products__item products__item_4">
-								<a href="#">
-									<h3>Accessories</h3>
-								</a>
-							</li>
-							<li class="products__item products__item_5">
-								<a href="#">
-									<h3>Sale</h3>
-								</a>
-							</li>
-							<li class="products__item products__item_6">
-								<a href="#">
-									<h3>Apparel adults</h3>
-								</a>
-							</li>
+							@@include('categorie/index.html',{
+							"index":"4",
+							"href":"#",
+							"name":"Accessories"
+							})
+							@@include('categorie/index.html',{
+							"index":"5",
+							"href":"#",
+							"name":"Sale"
+							})
+							@@include('categorie/index.html',{
+							"index":"6",
+							"href":"#",
+							"name":"Apparel adults"
+							})
 						</ul>
 						<h2>Product Description</h2>
 						<p>

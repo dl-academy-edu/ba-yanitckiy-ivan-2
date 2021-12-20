@@ -172,6 +172,7 @@
 	fill: #C29974;
 }
 
-.footer__column_rate ul:hover + p{
+.footer__column_rate ul:hover + p,
+.footer__column_rate ul:active + p{
 	color: #C29974;
 }

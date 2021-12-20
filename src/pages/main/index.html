@@ -43,26 +43,26 @@
 			<section class="products">
 				<h2>Category Products</h2>
 				<ul class="products__catalog undotted">
-					<li class="products__item products__item_1">
-						<a href="#">
-							<h3 class="products__title">Apparel kids</h3>
-						</a>
-					</li>
-					<li class="products__item products__item_2">
-						<a href="#">
-							<h3 class="products__title">Holiday shop</h3>
-						</a>
-					</li>
-					<li class="products__item products__item_3">
-						<a href="/pages/toys/index.html">
-							<h3 class="products__title">Toys</h3>
-						</a>
-					</li>
-					<li class="products__item products__item_4">
-						<a href="#">
-							<h3 class="products__title">Accessories</h3>
-						</a>
-					</li>
+					@@include('categorie/index.html',{
+					"index":"1",
+					"href":"#",
+					"name":"Apparel kids"
+					})
+					@@include('categorie/index.html',{
+					"index":"2",
+					"href":"#",
+					"name":"Holiday shop"
+					})
+					@@include('categorie/index.html',{
+					"index":"3",
+					"href":"/pages/toys/index.html",
+					"name":"Toys"
+					})
+					@@include('categorie/index.html',{
+					"index":"4",
+					"href":"#",
+					"name":"Accessories"
+					})
 				</ul>
 				<div class="products__control">
 					<button type="button" class="products__button products__button_b" aria-label="products back">

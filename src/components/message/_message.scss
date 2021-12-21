@@ -1,0 +1,22 @@
+.message{
+	position: absolute;
+	width: 11.7vw;
+	opacity: 0;
+	transform: translateY(35%);
+	&__block{
+		border-radius: 17px;
+		background-color: white;
+		padding: 17px;
+	}
+	&__tail{
+		position: absolute;
+		&_l{
+			left: 1.8vw;
+			bottom: -1.32vw;
+		}
+		&_r{
+			right: 1.8vw;
+			bottom: -1.32vw;
+		}
+	}
+}

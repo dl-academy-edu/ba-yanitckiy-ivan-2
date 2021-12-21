@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap">
+	<link rel="stylesheet" href="/common.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="container">
+		@@include('header/index.html')
+		<main>
+			<section class="slider">
+				<div class="slider__slide">
+					<div class="slider__positions">
+						<div class="slider__num">01</div>
+						<div class="slider__pos slider__pos_active"></div>
+						<div class="slider__pos"></div>
+						<div class="slider__pos"></div>
+						<div class="slider__pos"></div>
+					</div>
+					<div class="slider__titles">
+						<h1>The ooh noo collection</h1>
+						<p>Designed in Slovenia</p>
+						<button type="button" class="button slider__button">EXPLORE NOW</button>
+					</div>
+					<div class="slider__img">
+						<img src="static/images/toy_m.png" alt="" width="635" height="461">
+					</div>
+				</div>
+				<div class="slider__footer">
+					Free (continental) USA shipping on all orders of $100 USD or more!
+				</div>
+			</section>
+			<section class="products">
+				<h2>Category Products</h2>
+				<ul class="products__catalog undotted">
+					@@include('categorie/index.html',{
+					"index":"1",
+					"href":"#",
+					"name":"Apparel kids"
+					})
+					@@include('categorie/index.html',{
+					"index":"2",
+					"href":"#",
+					"name":"Holiday shop"
+					})
+					@@include('categorie/index.html',{
+					"index":"3",
+					"href":"/pages/toys/index.html",
+					"name":"Toys"
+					})
+					@@include('categorie/index.html',{
+					"index":"4",
+					"href":"#",
+					"name":"Accessories"
+					})
+				</ul>
+				<div class="products__control">
+					<button type="button" class="products__button products__button_b" aria-label="products back">
+						<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
+						</svg>
+					</button>
+					<button type="button" class="products__button products__button_f" aria-label="products forward">
+						<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4" />
+						</svg>
+					</button>
+					<p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion
+						to
+						furniture for kids and adults.</p>
+				</div>
+			</section>
+			<section class="delivery">
+				<img src="static/images/example.png" alt="example" width="480" height="559">
+				<div class="delivery__content">
+					<h2>Delivery</h2>
+					<ul class="delivery__links undotted">
+						<li class="delivery__item delivery__item_active">
+							<button type="button">Delivery</button>
+						</li>
+						<li class="delivery__item">
+							<button type="button">Guarantee</button>
+						</li>
+						<li class="delivery__item">
+							<button type="button">Credit</button>
+						</li>
+					</ul>
+					<p>Some days i feel like i've been working on dlk my entire life and there are other days that
+						i am completely shocked that four years have flown by. It's simply magical.</p>
+					<p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become
+						a truly
+						happy
+						place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+					<button type="button" class="button delivery__button">Learn more</button>
+				</div>
+			</section>
+			<section class="company">
+				<h2 class="company__title shadow">Companies</h2>
+				<ul class="company__list undotted">
+					<li class="company__item">
+						<img src="static/images/company_4.png" alt="" width="193" height="60">
+					</li>
+					<li class="company__item">
+						<img src="static/images/company_3.png" alt="" width="179" height="61">
+					</li>
+					<li class="company__item">
+						<img src="static/images/company_2.png" alt="" width="216" height="46">
+					</li>
+					<li class="company__item">
+						<img src="static/images/company_1.png" alt="" width="211" height="40">
+					</li>
+				</ul>
+			</section>
+			<article class="about">
+				<div class="about__design">
+					<h2>Design Life Kids</h2>
+					<h3>About Us</h3>
+					<p>Some days i feel like i've been working on dlk my entire life and there are other days that
+						i am completely shocked that four years have flown by. It's simply magical. </p>
+					<button class="button contacts__button">Buy now</button>
+				</div>
+				<div class="about__contacts">
+					<div class="about__background">
+						<h2>Contacts</h2>
+						<p>Some days i feel like i've been working on dlk my entire life and there are other days that
+							i am completely shocked that four years have flown by. It's simply magical.</p>
+					</div>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A144948f07529fc5bc9132b40799824577c0b8622427c23100f8c5ee59a8449a1&amp;source=constructor" width="483" height="240" frameborder="0"></iframe>
+				</div>
+			</article>
+		</main>
+	</div>
+	@@include('footer/index.html')
+	<section class="popup">
+		<h3>Contact us</h3>
+		<div class="form__container form__container_close">
+			<form action="#" method="POST" class="form main__form">
+				<div class="form__item">
+					<label for="contact_name">Name</label>
+					<input type="text" id="contact_name" placeholder="Ivan Ivanov">
+				</div>
+				<div class="form__data">
+					<div class="form__item form__phone">
+						<label for="contact_phone">Phone</label>
+						<input type="tel" id="contact_phone">
+					</div>
+					<div class="form__item">
+						<label for="contact_email">Email</label>
+						<input type="email" id="contact_email">
+					</div>
+				</div>
+				<div class="form__item">
+					<label for="contact_message">Message</label>
+					<textarea id="contact_message"></textarea>
+				</div>
+				<div class="form__check">
+					<input type="checkbox" id="contact_agreement" class="checkbox-input" required>
+					<label for="contact_agreement" class="checkbox-label">By clicking on the button, you consent
+						to the processing of
+						your
+						personal
+						data</label>
+				</div>
+				<button type="submit" class="button">Submit</button>
+				<button type="button" class="form__close">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="#F0F0F0" />
+					</svg>
+				</button>
+			</form>
+		</div>
+	</section>
+	<script src="/script.js"></script>
+</body>
+
+</html>

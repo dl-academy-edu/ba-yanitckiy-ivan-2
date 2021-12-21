@@ -1,0 +1,33 @@
+.blogs__item{
+	max-width: 380px;
+	margin: 0 0 34px 0;
+}
+
+.blogs__item h2:hover{
+	text-decoration: underline;
+}
+
+.blogs__item img{
+	margin: 0 0 17px 0;
+}
+
+.blogs__date{
+	margin: 0 0 7px 0;
+	font-size: 16px;
+	line-height: 22px;
+	color: #818181;
+}
+
+.blogs__item h2{
+	margin: 0 0 15px 0;
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+	transition: text-decoration 0.4s;
+}
+
+.blogs__text{
+	font-size: 18px;
+	line-height: 25px;
+}

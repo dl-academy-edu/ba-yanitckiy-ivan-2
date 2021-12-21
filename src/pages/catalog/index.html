@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap">
+	<link rel="stylesheet" href="/common.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<title>Каталог</title>
+</head>
+
+<body>
+	<div class="container">
+		@@include('header/index.html')
+		<main>
+			<section class="products">
+				<div class="breadcrumbs">
+					<h1>Category Products</h1>
+					<div class="breadcrumbs__links">
+						<div class="breadcrumbs__link">
+							<a href="/index.html">Home</a>
+						</div>
+						<span>Catalog</span>
+					</div>
+				</div>
+				<ul class="products__catalog undotted">
+					@@include('categorie/index.html',{
+					"index":"1",
+					"href":"#",
+					"name":"Apparel kids"
+					})
+					@@include('categorie/index.html',{
+					"index":"2",
+					"href":"#",
+					"name":"Holiday shop"
+					})
+					@@include('categorie/index.html',{
+					"index":"3",
+					"href":"/pages/toys/index.html",
+					"name":"Toys"
+					})
+				</ul>
+				<div class="products__lower">
+					<div class="products__box">
+						<ul class="products__catalog undotted">
+							@@include('categorie/index.html',{
+							"index":"4",
+							"href":"#",
+							"name":"Accessories"
+							})
+							@@include('categorie/index.html',{
+							"index":"5",
+							"href":"#",
+							"name":"Sale"
+							})
+							@@include('categorie/index.html',{
+							"index":"6",
+							"href":"#",
+							"name":"Apparel adults"
+							})
+						</ul>
+						<h2>Product Description</h2>
+						<p>
+							Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really
+							cry.
+							You
+							can
+							even bathe her, just like a little sister.
+						</p>
+						<p>
+							A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a
+							doll
+							will
+							be
+							an excellent choice for a gift for a girl from 4 years old.
+						</p>
+						<p>
+							The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+							hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her
+							young
+							mistress.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	@@include('footer/index.html')
+</body>
+
+</html>

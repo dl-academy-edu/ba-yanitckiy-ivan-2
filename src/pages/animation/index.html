@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap">
+	<link rel="stylesheet" href="/common.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<title>Анимация</title>
+</head>
+
+<body>
+	<div class="container">
+		@@include('header/index.html')
+		<div class="breadcrumbs">
+			<h1>Animation scene</h1>
+			<div class="breadcrumbs__links">
+				<div class="breadcrumbs__link">
+					<a href="index.html">Home</a>
+				</div>
+				<span>Animation</span>
+			</div>
+		</div>
+	</div>
+	<section class="animation">
+		<div class="animation__sky"></div>
+		<div class="animation__background"></div>
+		<img class="animation__car_2" src="/static/images/car_2.svg" alt="cars">
+		<img class="animation__car_4" src="/static/images/car_4.svg" alt="cars">
+		<img class="animation__car_3" src="/static/images/car_3.svg" alt="cars">
+		<img class="animation__car_1" src="/static/images/car_1.svg" alt="cars">
+		<img class="animation__lanterns" src="/static/images/lanterns.svg" alt="lanterns">
+		<img class="animation__taxi" src="/static/images/taxi.svg" alt="taxi">
+		<img class="animation__lantern" src="/static/images/lantern.svg" alt="lantern">
+		<img class="animation__man-arm" src="/static/images/man_arm.svg" alt="man arm">
+		<img class="animation__man" src="/static/images/man.svg" alt="man">
+		<img class="animation__woman" src="/static/images/woman.svg" alt="woman">
+		<img class="animation__woman-arm" src="/static/images/woman_arm.svg" alt="woman arm">
+		@@include('message/index.html',{
+		"class":"woman",
+		"text":"Джеси, смотри, такси едет!",
+		"mode":"r"
+		})
+		@@include('message/index.html',{
+		"class":"man",
+		"text":"Эй, такси, такси!",
+		"mode":"l"
+		})
+		@@include('message/index.html',{
+		"class":"taxi",
+		"text":"Я вообще-то не за вами!",
+		"mode":"r"
+		})
+		@@include('message/index.html',{
+		"class":"man2",
+		"text":"Ок, ждём ещё!",
+		"mode":"l"
+		})
+	</section>
+	@@include('footer/index.html')
+</body>
+
+</html>

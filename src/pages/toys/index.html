@@ -37,47 +37,51 @@
 			<div class="settings__background">
 				<div class="container">
 					<div class="settings__options">
-						<div class="settings__cost">
-							<h3>Cost</h3>
-							<input type="range">
-							<div class="settings__number">
-								<span>0</span>
-								<span>500</span>
+						<div class="settings__block">
+							<div class="settings__cost">
+								<h3>Cost</h3>
+								<input type="range">
+								<div class="settings__number">
+									<span>0</span>
+									<span>500</span>
+								</div>
 							</div>
-						</div>
-						<div class="settings__color">
-							<h3>Color</h3>
-							<ul class="undotted">
-								<li>
-									<input type="checkbox" id="color_black" class="checkbox-input">
-									<label for="color_black" class="checkbox-label">Black</label>
-								</li>
-								<li>
-									<input type="checkbox" id="color_blue" class="checkbox-input">
-									<label for="color_blue" class="checkbox-label">Blue</label>
-								</li>
-								<li>
-									<input type="checkbox" id="color_green" class="checkbox-input">
-									<label for="color_green" class="checkbox-label">Green</label>
-								</li>
-								<li>
-									<input type="checkbox" id="color_white" class="checkbox-input">
-									<label for="color_white" class="checkbox-label">White</label>
-								</li>
-							</ul>
-						</div>
-						<div class="settings__delivery">
-							<h3>Delivery</h3>
-							<ul class="undotted">
-								<li>
-									<input type="radio" id="del_free" name="delivery-radio" class="radio-input">
-									<label for="del_free" class="radio-label">Free shipping</label>
-								</li>
-								<li>
-									<input type="radio" id="del_fast" name="delivery-radio" class="radio-input">
-									<label for="del_fast" class="radio-label">Fast shipping</label>
-								</li>
-							</ul>
+							<div class="settings__switches">
+								<div class="settings__color">
+									<h3>Color</h3>
+									<ul class="undotted">
+										<li>
+											<input type="checkbox" id="color_black" class="checkbox-input">
+											<label for="color_black" class="checkbox-label">Black</label>
+										</li>
+										<li>
+											<input type="checkbox" id="color_blue" class="checkbox-input">
+											<label for="color_blue" class="checkbox-label">Blue</label>
+										</li>
+										<li>
+											<input type="checkbox" id="color_green" class="checkbox-input">
+											<label for="color_green" class="checkbox-label">Green</label>
+										</li>
+										<li>
+											<input type="checkbox" id="color_white" class="checkbox-input">
+											<label for="color_white" class="checkbox-label">White</label>
+										</li>
+									</ul>
+								</div>
+								<div class="settings__delivery">
+									<h3>Delivery</h3>
+									<ul class="undotted">
+										<li>
+											<input type="radio" id="del_free" name="delivery-radio" class="radio-input">
+											<label for="del_free" class="radio-label">Free shipping</label>
+										</li>
+										<li>
+											<input type="radio" id="del_fast" name="delivery-radio" class="radio-input">
+											<label for="del_fast" class="radio-label">Fast shipping</label>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 						<div class="settings__amount">
 							<h3>Amount</h3>
@@ -96,7 +100,9 @@
 										<label for="amount_fifty" class="radio-label_button">20-50</label>
 									</li>
 								</ul>
-								<button type="submit" class="button">Apply</button>
+								<div class="settings__button">
+									<button type="submit" class="button">Apply</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -107,52 +113,88 @@
 			<section class="toys">
 				<ul class="toys__list undotted">
 					<li class="toys__item">
-						@@include('toy/index.html',{
-						"href": "#",
-						"img": "toy-5.png",
-						"title": "SHARKY BEAN BAG CHAIR COVER",
-						"cost": "$60.00 USD"
-						})
+						<a href="#">
+							<div class="toys__img">
+								<picture>
+									<source srcset="/static/images/toy_1_s.png" media="(max-width: 526px)">
+									<source srcset="/static/images/toy_1_m.png" media="(max-width: 1000px)">
+									<img srcset="/static/images/toy_1.png" alt="toy picture">
+								</picture>
+								<div>Learn more</div>
+							</div>
+							<h3>SHARKY BEAN BAG CHAIR COVER</h3>
+							<p>$60.00 USD</p>
+						</a>
 					</li>
 					<li class="toys__item">
-						@@include('toy/index.html',{
-						"href": "#",
-						"img": "toy-4.png",
-						"title": "BRASS DECO FRAMES",
-						"cost": "$66.00 USD"
-						})
+						<a href="#">
+							<div class="toys__img">
+								<picture>
+									<source srcset="/static/images/toy_2_s.png" media="(max-width: 526px)">
+									<source srcset="/static/images/toy_2_m.png" media="(max-width: 1000px)">
+									<img srcset="/static/images/toy_2.png" alt="toy picture">
+								</picture>
+								<div>Learn more</div>
+							</div>
+							<h3>BRASS DECO FRAMES</h3>
+							<p>$66.00 USD</p>
+						</a>
 					</li>
 					<li class="toys__item">
-						@@include('toy/index.html',{
-						"href": "#",
-						"img": "toy-3.png",
-						"title": "CIBO FULL APRON",
-						"cost": "$60.00 USD"
-						})
+						<a href="#">
+							<div class="toys__img">
+								<picture>
+									<source srcset="/static/images/toy_3_s.png" media="(max-width: 526px)">
+									<source srcset="/static/images/toy_3_m.png" media="(max-width: 1000px)">
+									<img srcset="/static/images/toy_3.png" alt="toy picture">
+								</picture>
+								<div>Learn more</div>
+							</div>
+							<h3>CIBO FULL APRON</h3>
+							<p>$60.00 USD</p>
+						</a>
 					</li>
 					<li class="toys__item">
-						@@include('toy/index.html',{
-						"href": "#",
-						"img": "toy-2.png",
-						"title": "GATCHA GATCHA GUMBALL MACHINE",
-						"cost": "$56.00 USD"
-						})
+						<a href="#">
+							<div class="toys__img">
+								<picture>
+									<source srcset="/static/images/toy_4_s.png" media="(max-width: 526px)">
+									<source srcset="/static/images/toy_4_m.png" media="(max-width: 1000px)">
+									<img srcset="/static/images/toy_4.png" alt="toy picture">
+								</picture>
+								<div>Learn more</div>
+							</div>
+							<h3>GATCHA GATCHA GUMBALL MACHINE</h3>
+							<p>$56.00 USD</p>
+						</a>
 					</li>
 					<li class="toys__item">
-						@@include('toy/index.html',{
-						"href": "#",
-						"img": "toy-1.png",
-						"title": "CHRISTMAS ADVENT SCENTED CANDLE",
-						"cost": "$29.00 USD"
-						})
+						<a href="#">
+							<div class="toys__img">
+								<picture>
+									<source srcset="/static/images/toy_5_s.png" media="(max-width: 526px)">
+									<source srcset="/static/images/toy_5_m.png" media="(max-width: 1000px)">
+									<img srcset="/static/images/toy_5.png" alt="toy picture">
+								</picture>
+								<div>Learn more</div>
+							</div>
+							<h3>CHRISTMAS ADVENT SCENTED CANDLE</h3>
+							<p>$29.00 USD</p>
+						</a>
 					</li>
 					<li class="toys__item">
-						@@include('toy/index.html',{
-						"href": "#",
-						"img": "toy.png",
-						"title": "TANGLE SPINNING TEA LIGHT",
-						"cost": "$56600 USD"
-						})
+						<a href="#">
+							<div class="toys__img">
+								<picture>
+									<source srcset="/static/images/toy_6_s.png" media="(max-width: 526px)">
+									<source srcset="/static/images/toy_6_m.png" media="(max-width: 1000px)">
+									<img srcset="/static/images/toy_6.png" alt="toy picture">
+								</picture>
+								<div>Learn more</div>
+							</div>
+							<h3>TANGLE SPINNING TEA LIGHT</h3>
+							<p>$56.00 USD</p>
+						</a>
 					</li>
 				</ul>
 				@@include('pagination/index.html')
@@ -160,6 +202,7 @@
 		</div>
 	</main>
 	@@include('footer/index.html')
+	<script src="script.js"></script>
 </body>
 
 </html>

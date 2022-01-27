@@ -29,68 +29,65 @@
 					</div>
 				</div>
 				<ul class="products__catalog undotted">
-					@@include('categorie/index.html',{
-					"index":"1",
-					"href":"#",
-					"name":"Apparel kids"
-					})
-					@@include('categorie/index.html',{
-					"index":"2",
-					"href":"#",
-					"name":"Holiday shop"
-					})
-					@@include('categorie/index.html',{
-					"index":"3",
-					"href":"/pages/toys/index.html",
-					"name":"Toys"
-					})
+					<li class="products__item products__item_1">
+						<a href="#">
+							<h3>Apparel kids</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_2">
+						<a href="#">
+							<h3>Holiday shop</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_add products__item_3">
+						<a href="/pages/toys/index.html">
+							<h3>Toys</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_skip products__item_4">
+						<a href="#">
+							<h3>Accessories</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_5">
+						<a href="#">
+							<h3>Sale</h3>
+						</a>
+					</li>
+					<li class="products__item products__item_6">
+						<a href="#">
+							<h3>Apparel adults</h3>
+						</a>
+					</li>
 				</ul>
 				<div class="products__lower">
-					<div class="products__box">
-						<ul class="products__catalog undotted">
-							@@include('categorie/index.html',{
-							"index":"4",
-							"href":"#",
-							"name":"Accessories"
-							})
-							@@include('categorie/index.html',{
-							"index":"5",
-							"href":"#",
-							"name":"Sale"
-							})
-							@@include('categorie/index.html',{
-							"index":"6",
-							"href":"#",
-							"name":"Apparel adults"
-							})
-						</ul>
-						<h2>Product Description</h2>
-						<p>
-							Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really
-							cry.
-							You
-							can
-							even bathe her, just like a little sister.
-						</p>
-						<p>
-							A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a
-							doll
-							will
-							be
-							an excellent choice for a gift for a girl from 4 years old.
-						</p>
-						<p>
-							The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
-							hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her
-							young
-							mistress.
-						</p>
-					</div>
+					<h2>Product Description</h2>
+					<p>
+						Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really
+						cry.
+						You
+						can
+						even bathe her, just like a little sister.
+					</p>
+					<p>
+						A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a
+						doll
+						will
+						be
+						an excellent choice for a gift for a girl from 4 years old.
+					</p>
+					<p>
+						The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+						hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her
+						young
+						mistress.
+					</p>
 				</div>
 			</section>
 		</main>
 	</div>
 	@@include('footer/index.html')
+	<script src="script.js"></script>
 </body>
 
 </html>

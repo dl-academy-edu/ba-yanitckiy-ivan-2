@@ -17,117 +17,145 @@
 <body>
 	<div class="container">
 		@@include('header/index.html')
-		<main>
-			<section class="slider">
-				<div class="slider__slide">
-					<div class="slider__positions">
-						<div class="slider__num">01</div>
-						<div class="slider__pos slider__pos_active"></div>
-						<div class="slider__pos"></div>
-						<div class="slider__pos"></div>
-						<div class="slider__pos"></div>
-					</div>
-					<div class="slider__titles">
-						<h1>The ooh noo collection</h1>
-						<p>Designed in Slovenia</p>
-						<button type="button" class="button slider__button">EXPLORE NOW</button>
-					</div>
-					<div class="slider__img">
-						<img src="static/images/toy_m.png" alt="" width="635" height="461">
-					</div>
+	</div>
+	<section class="slider">
+		<div class="container container_no-width">
+			<div class="slider__slide">
+				<div class="slider__positions">
+					<div class="slider__num">01</div>
+					<div class="slider__pos slider__pos_active"></div>
+					<div class="slider__pos"></div>
+					<div class="slider__pos"></div>
+					<div class="slider__pos"></div>
 				</div>
-				<div class="slider__footer">
-					Free (continental) USA shipping on all orders of $100 USD or more!
+				<div class="slider__titles">
+					<h1>The ooh noo collection</h1>
+					<p>Designed in Slovenia</p>
+					<button type="button" class="button slider__button">EXPLORE NOW</button>
 				</div>
-			</section>
-			<section class="products">
-				<h2>Category Products</h2>
-				<ul class="products__catalog undotted">
-					@@include('categorie/index.html',{
-					"index":"1",
-					"href":"#",
-					"name":"Apparel kids"
-					})
-					@@include('categorie/index.html',{
-					"index":"2",
-					"href":"#",
-					"name":"Holiday shop"
-					})
-					@@include('categorie/index.html',{
-					"index":"3",
-					"href":"/pages/toys/index.html",
-					"name":"Toys"
-					})
-					@@include('categorie/index.html',{
-					"index":"4",
-					"href":"#",
-					"name":"Accessories"
-					})
-				</ul>
-				<div class="products__control">
-					<button type="button" class="products__button products__button_b" aria-label="products back">
-						<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
-						</svg>
-					</button>
-					<button type="button" class="products__button products__button_f" aria-label="products forward">
-						<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4" />
-						</svg>
-					</button>
-					<p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion
-						to
-						furniture for kids and adults.</p>
-				</div>
-			</section>
-			<section class="delivery">
-				<img src="static/images/example.png" alt="example" width="480" height="559">
-				<div class="delivery__content">
-					<h2>Delivery</h2>
-					<ul class="delivery__links undotted">
-						<li class="delivery__item delivery__item_active">
-							<button type="button">Delivery</button>
-						</li>
-						<li class="delivery__item">
-							<button type="button">Guarantee</button>
-						</li>
-						<li class="delivery__item">
-							<button type="button">Credit</button>
-						</li>
-					</ul>
-					<p>Some days i feel like i've been working on dlk my entire life and there are other days that
-						i am completely shocked that four years have flown by. It's simply magical.</p>
-					<p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become
-						a truly
-						happy
-						place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-					<button type="button" class="button delivery__button">Learn more</button>
-				</div>
-			</section>
-			<section class="company">
-				<h2 class="company__title shadow">Companies</h2>
-				<ul class="company__list undotted">
-					<li class="company__item">
-						<img src="static/images/company_4.png" alt="" width="193" height="60">
+				<picture>
+					<source srcset="static/images/slider_s.png, static/images/slider_s-2x.png 2x" media="(max-width: 768px)">
+					<source srcset="static/images/slider_m.png, static/images/slider_m-2x.png 2x" media="(max-width: 1300px)">
+					<img srcset="static/images/slider.png, static/images/slider-2x.png 2x" alt="main toy">
+				</picture>
+			</div>
+			<div class="slider__footer">
+				Free (continental) USA shipping on all orders of $100 USD or more!
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<section class="products">
+			<h2>Category Products</h2>
+			<ul class="products__catalog undotted">
+				<li class="products__item products__item_1">
+					<a href="#">
+						<h3>Apparel kids</h3>
+					</a>
+				</li>
+				<li class="products__item products__item_2">
+					<a href="#">
+						<h3>Holiday shop</h3>
+					</a>
+				</li>
+				<li class="products__item products__item_add products__item_3">
+					<a href="/pages/toys/index.html">
+						<h3>Toys</h3>
+					</a>
+				</li>
+				<li class="products__item products__item_skip products__item_4">
+					<a href="#">
+						<h3>Accessories</h3>
+					</a>
+				</li>
+			</ul>
+			<div class="products__control">
+				<button type="button" class="products__button products__button_b" aria-label="products back">
+					<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
+					</svg>
+				</button>
+				<button type="button" class="products__button products__button_f" aria-label="products forward">
+					<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4" />
+					</svg>
+				</button>
+				<p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion
+					to
+					furniture for kids and adults.</p>
+			</div>
+		</section>
+		<section class="delivery">
+			<picture>
+				<source srcset="static/images/example_s.png, static/images/example_s-2x.png 2x" media="(max-width: 700px)">
+				<source srcset="static/images/example_m.png, static/images/example_m-2x.png 2x" media="(max-width: 1000px)">
+				<img srcset="static/images/example.png, static/images/example-2x.png 2x" alt="example">
+			</picture>
+			<div class="delivery__content">
+				<h2>Delivery</h2>
+				<ul class="delivery__links undotted">
+					<li class="delivery__item delivery__item_active">
+						<button type="button">Delivery</button>
 					</li>
-					<li class="company__item">
-						<img src="static/images/company_3.png" alt="" width="179" height="61">
+					<li class="delivery__item">
+						<button type="button">Guarantee</button>
 					</li>
-					<li class="company__item">
-						<img src="static/images/company_2.png" alt="" width="216" height="46">
-					</li>
-					<li class="company__item">
-						<img src="static/images/company_1.png" alt="" width="211" height="40">
+					<li class="delivery__item">
+						<button type="button">Credit</button>
 					</li>
 				</ul>
-			</section>
-			<article class="about">
+				<p>Some days i feel like i've been working on dlk my entire life and there are other days that
+					i am completely shocked that four years have flown by. It's simply magical.</p>
+				<p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become
+					a truly
+					happy
+					place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+				<button type="button" class="button delivery__button">Learn more</button>
+			</div>
+		</section>
+		<section class="company">
+			<h2 class="company__title shadow">Companies</h2>
+			<ul class="company__list undotted">
+				<li class="company__item">
+					<picture>
+						<source srcset="static/images/company_1_s.png, static/images/company_1_s-2x.png 2x" media="(max-width: 700px)">
+						<source srcset="static/images/company_1_m.png, static/images/company_1_m-2x.png 2x" media="(max-width: 1100px)">
+						<img srcset="static/images/company_1.png, static/images/company_1-2x.png 2x" alt="company">
+					</picture>
+				</li>
+				<li class="company__item">
+					<picture>
+						<source srcset="static/images/company_2_s.png, static/images/company_2_s-2x.png 2x" media="(max-width: 700px)">
+						<source srcset="static/images/company_2_m.png, static/images/company_2_m-2x.png 2x" media="(max-width: 1100px)">
+						<img srcset="static/images/company_2.png, static/images/company_2-2x.png 2x" alt="company">
+					</picture>
+				</li>
+				<li class="company__item">
+					<picture>
+						<source srcset="static/images/company_3_s.png, static/images/company_3_s-2x.png 2x" media="(max-width: 700px)">
+						<source srcset="static/images/company_3_m.png, static/images/company_3_m-2x.png 2x" media="(max-width: 1100px)">
+						<img srcset="static/images/company_3.png, static/images/company_3-2x.png 2x" alt="company">
+					</picture>
+				</li>
+				<li class="company__item">
+					<picture>
+						<source srcset="static/images/company_4_s.png, static/images/company_4_s-2x.png 2x" media="(max-width: 700px)">
+						<source srcset="static/images/company_4_m.png, static/images/company_4_m-2x.png 2x" media="(max-width: 1100px)">
+						<img srcset="static/images/company_4.png, static/images/company_4-2x.png 2x" alt="company">
+					</picture>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<article>
+		<div class="container container_no-width">
+			<div class="about">
 				<div class="about__design">
 					<h2>Design Life Kids</h2>
 					<h3>About Us</h3>
 					<p>Some days i feel like i've been working on dlk my entire life and there are other days that
 						i am completely shocked that four years have flown by. It's simply magical. </p>
-					<button class="button contacts__button">Buy now</button>
+					<button class="about__button button">Buy now</button>
 				</div>
 				<div class="about__contacts">
 					<div class="about__background">
@@ -135,16 +163,17 @@
 						<p>Some days i feel like i've been working on dlk my entire life and there are other days that
 							i am completely shocked that four years have flown by. It's simply magical.</p>
 					</div>
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A144948f07529fc5bc9132b40799824577c0b8622427c23100f8c5ee59a8449a1&amp;source=constructor" width="483" height="240" frameborder="0"></iframe>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A144948f07529fc5bc9132b40799824577c0b8622427c23100f8c5ee59a8449a1&amp;source=constructor" frameborder="0"></iframe>
 				</div>
-			</article>
-		</main>
-	</div>
+			</div>
+		</div>
+	</article>
+	</main>
 	@@include('footer/index.html')
-	<section class="popup">
+	<section class="form">
 		<h3>Contact us</h3>
 		<div class="form__container form__container_close">
-			<form action="#" method="POST" class="form main__form">
+			<form action="#" method="POST" class="form__main">
 				<div class="form__item">
 					<label for="contact_name">Name</label>
 					<input type="text" id="contact_name" placeholder="Ivan Ivanov">

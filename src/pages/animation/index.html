@@ -17,17 +17,19 @@
 <body>
 	<div class="container">
 		@@include('header/index.html')
-		<div class="breadcrumbs">
-			<h1>Animation scene</h1>
-			<div class="breadcrumbs__links">
-				<div class="breadcrumbs__link">
-					<a href="index.html">Home</a>
-				</div>
-				<span>Animation</span>
-			</div>
-		</div>
 	</div>
 	<section class="animation">
+		<div class="container">
+			<div class="breadcrumbs">
+				<h1>Animation scene</h1>
+				<div class="breadcrumbs__links">
+					<div class="breadcrumbs__link">
+						<a href="index.html">Home</a>
+					</div>
+					<span>Animation</span>
+				</div>
+			</div>
+		</div>
 		<div class="animation__sky"></div>
 		<div class="animation__background"></div>
 		<img class="animation__car_2" src="/static/images/car_2.svg" alt="cars">
@@ -63,6 +65,7 @@
 		})
 	</section>
 	@@include('footer/index.html')
+	<script src="script.js"></script>
 </body>
 
 </html>
